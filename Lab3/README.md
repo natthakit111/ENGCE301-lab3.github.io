@@ -75,9 +75,6 @@ Actors:
 
 # 📌 4. Use Case Scenarios
 
-ไฟล์ Scenario (MD / PDF / DOCX):  
-👉 **<ลิงก์ไฟล์ Use Case Scenarios ที่นี่>**
-
 Use Cases ที่เขียนครบ:
 - UC-03 Submit Lab  
 - UC-04 View My Lab Status  
