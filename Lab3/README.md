@@ -90,18 +90,17 @@ Use Cases ที่เขียนครบ:
 
 # 📌 5. รายการไฟล์ทั้งหมดภายในโฟลเดอร์ lab3/
 
-lab3/
-├─ README.md
-├─ LAB3_SRS.md
-├─ LAB3_UserStories.md
-├─ Use Case Scenario.md
-├─ usecase-diagram.png / .pdf
-├─ index.html
-├─ my-labs.html
-├─ about.html
-├─ styles.css
+📁lab3/
+├─ 📄README.md
+├─ 📄LAB3_SRS.md
+├─ 📄LAB3_UserStories.md
+├─ 📄Use Case Scenario.md
+├─ 📄Use Case Diagram.pdf
+├─ 📄index.html
+├─ 📄my-labs.html
+├─ 📄about.html
+├─ 📄styles.css
 └─ (ไฟล์อื่น ๆ ที่เกี่ยวข้อง)
-
 
 ---
 
