@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About · ENGCE301 Lab Submission Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="page-container">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-mark">ENGCE301</span>
+            <span class="logo-text">Lab Submission Portal</span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="my-labs.html" class="nav-link">My Labs</a>
+            <a href="about.html" class="nav-link active">About</a>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+        <section class="section">
+            <header class="section-header">
+                <h2>About This Portal</h2>
+                <p>
+                    This page explains how the ENGCE301 Lab Submission Portal
+                    is derived from your SRS, User Stories and Use Cases.
+                </p>
+            </header>
+
+            <div class="content-grid">
+                <article class="content-card">
+                    <h3>System Overview</h3>
+                    <p>
+                        ระบบนี้เป็นเว็บแอปพลิเคชันสำหรับวิชา <strong>ENGCE301</strong> ที่ใช้จัดการงาน LAB ทั้งหมด
+                        นักศึกษาสามารถดูรายการ LAB, อ่านรายละเอียด, อัปโหลดไฟล์ส่งงาน และตรวจสอบสถานะ/คะแนนของตนเองได้
+                        ส่วนผู้สอนสามารถสร้าง LAB, ตรวจงาน, ให้คะแนน และให้ Feedback ผ่านระบบเดียวกัน
+                        <br><br>
+                        สำหรับวิชานี้ หน้าเว็บทั้งหมดเป็นเพียง <strong>Prototype UI</strong>
+                        (เช่น Landing Page, My Labs Page, About Page) ที่พัฒนาด้วย HTML/CSS เท่านั้น
+                        ยังไม่มี backend จริง แต่เตรียมโครงไว้สำหรับต่อยอดในอนาคตตาม SRS ที่กำหนดไว้
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>From SRS to Screens</h3>
+                    <ul>
+                        <li>
+                            <strong>FR-1 View Lab List</strong>
+                            &rarr; แสดงผลเป็นส่วน <strong>“Upcoming Labs”</strong> บนหน้าแรก (<code>index.html</code>)
+                        </li>
+                        <li>
+                            <strong>FR-2 View Lab Details</strong>
+                            &rarr; วางแผนเป็นหน้า <strong>Lab Details</strong> แยกต่างหากในอนาคต
+                            (ใน Prototype นี้อธิบายไว้ใน About และการ์ดของ LAB)
+                        </li>
+                        <li>
+                            <strong>FR-3 Submit Lab</strong> + <strong>FR-4 Handle Late Submission</strong>
+                            &rarr; ออกแบบเป็น <strong>ฟอร์มส่งงาน LAB</strong> และแสดงสถานะ
+                            (เช่น Submitted / Late) บนหน้า My Labs และ My Status
+                        </li>
+                        <li>
+                            <strong>FR-7 Grade &amp; Feedback</strong>
+                            &rarr; จำลองผ่าน <strong>Instructor Grading Prototype</strong> (เช่นหน้า Maim-Alter.html)
+                            และคอลัมน์คะแนน/Feedback ในตารางสถานะ LAB
+                        </li>
+                        <li>
+                            <strong>FR-8 View My Lab Status</strong>
+                            &rarr; แสดงผลในหน้า <strong>My Lab Status</strong> บน <code>my-labs.html</code>
+                            และ section “My Lab Status (Mock Data)” บนหน้าแรก
+                        </li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <header class="section-header">
+                <h2>Mapping: User Stories → UI Elements</h2>
+                <p>Use this section to explicitly map each user story to parts of the UI.</p>
+            </header>
+
+            <div class="content-grid">
+                <article class="content-card">
+                    <h3>Example Mapping</h3>
+                    <ul>
+                        <li>
+                            <strong>US-01 – View Lab List</strong><br>
+                            <span class="text-muted">
+                                → Implemented as the “Upcoming Labs” cards on the Home page.
+                            </span>
+                        </li>
+                        <li>
+                            <strong>US-02 – Submit Lab File</strong><br>
+                            <span class="text-muted">
+                                → Will be implemented as a detailed lab page with a submission form.
+                            </span>
+                        </li>
+                        <li>
+                            <strong>US-03 – View My Lab Status</strong><br>
+                            <span class="text-muted">
+                                → Represented by the “My Lab Status” section and extended in my-labs.html.
+                            </span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="content-card">
+                    <h3>Term Project Mapping – FitnessPal</h3>
+                    <p>
+                        สำหรับ <strong>Term Project</strong> ของกลุ่มเรา คือระบบ
+                        <strong>FitnessPal</strong> ซึ่งเป็นเว็บแอปสำหรับช่วยติดตามสุขภาพแบบครบวงจร
+                        (การออกกำลังกาย, โภชนาการ และความก้าวหน้าของร่างกาย)
+                        เราใช้กระบวนการเดียวกับ ENGCE301 Lab Submission Portal คือ
+                        <strong>SRS → User Stories → Use Cases → UI</strong> เช่นเดียวกัน
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>SRS – FitnessPal</strong><br>
+                            <span class="text-muted">
+                                ระบุฟีเจอร์หลัก เช่น Workout Program, Calorie Logging,
+                                Progress Tracking และเป้าหมายด้านสุขภาพของผู้ใช้
+                                (ลดน้ำหนัก, เพิ่มกล้าม ฯลฯ)
+                            </span>
+                        </li>
+                        <li>
+                            <strong>User Stories (ตัวอย่าง)</strong><br>
+                            <span class="text-muted">
+                                – US-FP-01: ในฐานะผู้ใช้ ฉันต้องการบันทึกการออกกำลังกายในแต่ละวัน<br>
+                                – US-FP-02: ในฐานะผู้ใช้ ฉันต้องการบันทึกอาหาร/แคลอรี่ที่กินในแต่ละมื้อ<br>
+                                – US-FP-03: ในฐานะผู้ใช้ ฉันต้องการดูสรุปความก้าวหน้าของน้ำหนักและสัดส่วนตัวเอง
+                            </span>
+                        </li>
+                        <li>
+                            <strong>Use Cases (ตัวอย่าง)</strong><br>
+                            <span class="text-muted">
+                                – UC-FP-01: Log Workout → ฟอร์มบันทึกชุดท่า, เวลา, แคลอรี่ที่เผาผลาญ<br>
+                                – UC-FP-02: Log Meal → ฟอร์มบันทึกเมนู, ปริมาณ, แคลอรี่รวมต่อมื้อ<br>
+                                – UC-FP-03: View Progress Dashboard → หน้า Dashboard แสดงกราฟน้ำหนัก/สัดส่วน/แคลอรี่
+                            </span>
+                        </li>
+                        <li>
+                            <strong>UI Components ใน FitnessPal</strong><br>
+                            <span class="text-muted">
+                                – หน้า Landing Page ของ FitnessPal → สรุปฟีเจอร์หลัก + ปุ่มเริ่มต้นใช้งาน<br>
+                                – หน้า Workout Program → แสดงโปรแกรมออกกำลังกายและให้ผู้ใช้ Log Workout ตาม UC-FP-01<br>
+                                – หน้า Calorie Logging → ฟอร์มบันทึกอาหารตาม US-FP-02 / UC-FP-02<br>
+                                – หน้า Progress Tracking → Dashboard แสดงกราฟ/สถิติ ตาม US-FP-03 / UC-FP-03
+                            </span>
+                        </li>
+                    </ul>
+                    <p>
+                        สรุปคือ ถึงแม้หน้าเว็บใน LAB 3 จะเป็น <strong>Lab Submission Portal</strong> แต่แนวคิด
+                        การออกแบบจาก <strong>SRS → User Stories → Use Cases → Web UI</strong> ชุดเดียวกันนี้
+                        ถูกนำไปใช้จริงใน <strong>Term Project: FitnessPal</strong> ของกลุ่มเราด้วย
+                    </p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>ENGCE301 – Software Design &amp; Development · Week 3</p>
+        <p class="footer-small">
+            About page: explain how requirements are transformed into UI.
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>
